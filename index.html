@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graduate Maldives</title>
 
+    <script src="https://cdn-tailwindcss.vercel.app"></script>
+    <script src="tailwind-config.js"></script>
+
     <style type="text/tailwindcss">
         .wrapper{
             @apply max-w-6xl px-2 mx-auto items-center; 
@@ -47,30 +50,27 @@
                     <form class="mt-8 flex flex-wrap md:space-y-0 space-y-4 md:space-x-2 md:justify-between" action="">
 
                         <div class="relative w-full md:w-1/4 h-10">
-                            <input id="emailf" name="email" type="text"
+                            <input id="institution" name="email" type="text"
                                 class="rounded peer h-full w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-rose-600"
-                                placeholder="email" />
-                            <label for="emailf"
-                                class="absolute left-2 text-lg transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-8 peer-focus:text-white peer-focus:font-semibold peer-focus:text-lg">Email
-                                address</label>
+                                placeholder="Institution" />
+                            <label for="institution"
+                                class="absolute left-2 text-lg transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-8 peer-focus:text-white peer-focus:font-semibold peer-focus:text-lg">Institution</label>
                         </div>
 
                         <div class="relative w-full md:w-1/4 h-10">
-                            <input id="emailf" name="email" type="text"
+                            <input id="level" name="email" type="text"
                                 class="rounded peer h-full w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-rose-600"
-                                placeholder="email" />
-                            <label for="emailf"
-                                class="absolute left-2 text-lg transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-8 peer-focus:text-white peer-focus:font-semibold peer-focus:text-lg">Email
-                                address</label>
+                                placeholder="Level" />
+                            <label for="level"
+                                class="absolute left-2 text-lg transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-8 peer-focus:text-white peer-focus:font-semibold peer-focus:text-lg">Level</label>
                         </div>
 
                         <div class="relative w-full md:w-1/4 h-10">
-                            <input id="emailf" name="email" type="text"
+                            <input id="mode" name="email" type="text"
                                 class="rounded peer h-full w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-rose-600"
-                                placeholder="email" />
-                            <label for="emailf"
-                                class="absolute left-2 text-lg transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-8 peer-focus:text-white peer-focus:font-semibold peer-focus:text-lg">Email
-                                address</label>
+                                placeholder="Study Mode" />
+                            <label for="mode"
+                                class="absolute left-2 text-lg transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-8 peer-focus:text-white peer-focus:font-semibold peer-focus:text-lg">Study Mode</label>
                         </div>
 
                         <button
@@ -84,20 +84,13 @@
     <main class="bg-gradient-to-r from-indigo-50 to-indigo-100">
         <div class="wrapper py-24">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4">
-                <div class="bg-white shadow-lg rounded-md p-2">
+                <div class="bg-white shadow-lg rounded-md p-2 relative">
                     <h1 class="text-secondary font-semibold text-xl">Bachelor of Computer Science</h1>
                     <div class="flex mb-4 items-center space-x-3">
-                        <img class="h-24" src="mnu.png" alt="">
-                        <div>
-                            <h1 class="my-3 font-semibold text-gray-500">Maldives National University</h1>
-                            <div class="flex space-x-2 text-gray-500 mb-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
-                                </svg>
-                                <p>ffe</p>
-                            </div>
+                        <img class="h-20" src="mnu.png" alt="">
+                        <div class="text-gray-500">
+                            <h1 class="my-3 font-semibold">Maldives National University</h1>
+                            <p>Duration: 3 Years</p>
                         </div>
 
                     </div>
@@ -108,40 +101,99 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
-                        <p>ffe</p>
+                        <p>Full time/ Part time</p>
                     </div>
-                    <div class="flex space-x-2 text-gray-500">
+                    <div class="flex space-x-2 text-gray-500 mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                        </svg>
+                        <p>On-Campus/Online</p>
+                    </div>
+                    <button class="absolute bottom-2 right-2 bg-secondary text-white p-1  rounded">Read more</button>
+                </div>
+                <div class="bg-white shadow-lg rounded-md p-2 relative">
+                    <h1 class="text-secondary font-semibold text-xl">Bachelor of Computer Science</h1>
+                    <div class="flex mb-4 items-center space-x-3">
+                        <img class="h-20" src="mnu.png" alt="">
+                        <div class="text-gray-500">
+                            <h1 class="my-3 font-semibold">Maldives National University</h1>
+                            <p>Duration: 3 Years</p>
+                        </div>
+
+                    </div>
+
+                    <div class="flex space-x-2 text-gray-500 mb-2">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
-                        <p>ffe</p>
+                        <p>Full time/ Part time</p>
                     </div>
+                    <div class="flex space-x-2 text-gray-500 mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                        </svg>
+                        <p>On-Campus/Online</p>
+                    </div>
+                    <button class="absolute bottom-2 right-2 bg-secondary text-white p-1  rounded">Read more</button>
                 </div>
-                <div
-                    class="bg-white shadow-lg h-12 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">
-                    2</div>
-                <div
-                    class="bg-white shadow-lg h-12 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">
-                    3</div>
-                <div
-                    class="bg-white shadow-lg  h-12 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">
-                    4</div>
-                <div
-                    class="bg-white shadow-lg  h-12 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">
-                    5</div>
-                <div
-                    class="bg-white shadow-lg  h-12 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">
-                    6</div>
+                <div class="bg-white shadow-lg rounded-md p-2 relative">
+                    <h1 class="text-secondary font-semibold text-xl">Bachelor of Computer Science</h1>
+                    <div class="flex mb-4 items-center space-x-3">
+                        <img class="h-20" src="villaCollege.png" alt="">
+                        <div class="text-gray-500">
+                            <h1 class="my-3 font-semibold">Maldives National University</h1>
+                            <p>Duration: 3 Years</p>
+                        </div>
+
+                    </div>
+
+                    <div class="flex space-x-2 text-gray-500 mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <p>Full time/ Part time</p>
+                    </div>
+                    <div class="flex space-x-2 text-gray-500 mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                        </svg>
+                        <p>On-Campus/Online</p>
+                    </div>
+                    <button class="absolute bottom-2 right-2 bg-secondary text-white p-1  rounded">Read more</button>
+                </div>
+                
 
             </div>
         </div>
     </main>
 
-
-    <script src="https://cdn-tailwindcss.vercel.app"></script>
-    <script src="tailwind-config.js"></script>
+    <footer class="bg-primary text-white p-5">
+        <div class="wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-x-20">
+            <div class="text-center">
+                <h1 class="text-2xl font-semibold">About Us</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit possimus dolor molestiae a cupiditate, quam tempora consectetur est recusandae maxime!</p>
+            </div>
+            <div class="text-center">
+                <h1 class="text-2xl font-semibold">Contact Us</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit possimus dolor molestiae a cupiditate, quam tempora consectetur est recusandae maxime!</p>
+            </div>
+            <div class="text-center">
+                <h1 class="text-2xl font-semibold">About Us</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit possimus dolor molestiae a cupiditate, quam tempora consectetur est recusandae maxime!</p>
+            </div>
+        </div>
+    </footer>
+    
 </body>
 
 </html>
