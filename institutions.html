@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+	#btn {
+		padding: 10px 8px;
+		color: green;
+		background-color: rgba(122, 122, 122, 0.322);
+		border-radius: 12px;
+	}
+
+	.geeks {
+        visibility: hidden;
+	}
+	</style>
+	<!-- JQuery CDN -->
+	<script src=
+"https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity=
+"sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous">
+	</script>
+		
+	<!-- JQuery UI CDN -->
+<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+</script>
+	
+	<script>
+	$(document).ready(function () {
+		$("#btn").click(function () {
+		$("h2").removeClass("geeks", 5000);
+		});
+	});
+	</script>
+</head>
+<body>
+<h2 class="geeks">Welcome to GeeksForGeeks.</h2>
+<button id="btn">
+Click to see the effect</button>
+</body>
+</html>

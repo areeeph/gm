@@ -12,7 +12,7 @@
 
     <style type="text/tailwindcss">
         .wrapper{
-            @apply max-w-6xl px-2 mx-auto items-center; 
+            @apply max-w-6xl px-2 mx-auto ; 
         }
     </style>
 
@@ -24,19 +24,46 @@
         <div class="z-10 text-white">
             <div class="bg-primary w-full">
                 <nav class="wrapper flex justify-between">
+                    <div class="flex items-center md:hidden">
+                        <button onclick="openMenu()"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                          </svg></button>
+                    </div>
                     <div class="flex space-x-7">
                         <div class="relative p-1 h-12 curser-pointer">
                             <img class="h-full" src="Logo.svg" alt="">
                         </div>
-
+    
                         <ul class="hidden md:flex items-center space-x-4">
-                            <li><a class="font-semibold" href="#">Home</a></li>
-                            <li><a class="font-semibold" href="#">Institutions</a></li>
-                            <li><a class="font-semibold" href="#">Courses</a></li>
+                            <li><a class="font-semibold" href="index.html">Home</a></li>
+                            <li><a class="font-semibold" href="institutions.html">Institutions</a></li>
+                            <li><a class="font-semibold" href="courses.html">Courses</a></li>
                         </ul>
+    
+                        <div id="menu" class="md:hidden absolute top-0 -left-7  z-30 w-full hidden h-screen">
+                            <div class="h-full flex">
+                                <div class="p-4 relative bg-secondary w-3/5">
+                                    <ul class="">
+                                        <li><a class="font-semibold" href="index.html">Home</a></li>
+                                        <li><a class="font-semibold" href="institutions.html">Institutions</a></li>
+                                        <li><a class="font-semibold" href="courses.html">Courses</a></li>
+                                    </ul>
+        
+                                    <button  onclick="closeMenu()" class="absolute top-4 right-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                          </svg>
+                                        </button>
+                                </div>
+                                <div class="bg-primary opacity-75 w-2/5"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <a class="font-semibold text-secondary" href="#">Login/Signup</a>
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="md:hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                          </svg>
+                        <a class="md:flex hidden font-semibold text-secondary" href="#">Login/Signup</a>
                     </div>
                 </nav>
             </div>
@@ -268,7 +295,7 @@
             </div>
         </div>
     </footer>
-    
+    <script src="main.js"></script>
 </body>
 
 </html>
