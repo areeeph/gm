@@ -1,43 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduate Maldives</title>
 
-<style>
-	#btn {
-		padding: 10px 8px;
-		color: green;
-		background-color: rgba(122, 122, 122, 0.322);
-		border-radius: 12px;
-	}
+    <script src="https://cdn-tailwindcss.vercel.app"></script>
+    <script src="tailwind-config.js"></script>
 
-	.geeks {
-        visibility: hidden;
-	}
-	</style>
-	<!-- JQuery CDN -->
-	<script src=
-"https://code.jquery.com/jquery-3.6.0.min.js"
-			integrity=
-"sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-			crossorigin="anonymous">
-	</script>
-		
-	<!-- JQuery UI CDN -->
-<script src=
-"https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
-</script>
-	
-	<script>
-	$(document).ready(function () {
-		$("#btn").click(function () {
-		$("h2").removeClass("geeks", 5000);
-		});
-	});
-	</script>
+    <style type="text/tailwindcss">
+        .wrapper{
+            @apply max-w-6xl px-2 mx-auto;
+        }
+    </style>
 </head>
 <body>
-<h2 class="geeks">Welcome to GeeksForGeeks.</h2>
-<button id="btn">
-Click to see the effect</button>
+
+    <div class="z-10 text-white">
+        <div class="bg-primary w-full">
+            <nav class="wrapper flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="relative p-1 h-12 curser-pointer">
+                        <img class="h-full" src="Logo.svg" alt="">
+                    </div>
+
+                    <ul class="hidden md:flex items-center space-x-4">
+                        <li><a class="font-semibold" href="index.html">Home</a></li>
+                        <li><a class="font-semibold" href="institutions.html">Institutions</a></li>
+                        <li><a class="font-semibold" href="courses.html">Courses</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center">
+                    <a class="font-semibold text-secondary" href="#">Login/Signup</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+hggn
 </body>
-</html>
