@@ -66,9 +66,13 @@
     </div>
     
     
-    <div class="wrapper  space-x-10 flex flex-wrap p-20">
+    <div class="wrapper relative lg:space-x-10 flex flex-wrap p-20">
 
-        <div class="w-1/4 bg-white p-2 rounded py-4">
+        <div class="w-full -mt-12 lg:hidden">
+            <button onclick="openFilter()">Filters</button>
+        </div>
+
+        <div id="filter" class="hidden absolute top-0 left-0 z-20 w-full h-screen lg:relative lg:w-1/4 bg-white p-2 rounded py-4">
             <div>
                 <div class="flex justify-between mb-4">
                     <div class="flex items-center space-x-2">
@@ -78,6 +82,8 @@
                           </svg>
                     </div>
                     <p class="text-secondary font-semibold">Reset</p>
+            <button class="lg:hidden" onclick="closeFilter()">Close</button>
+
                 </div>
               
                 <form>

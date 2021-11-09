@@ -9,3 +9,15 @@ function closeMenu() {
     element.classList.add("hidden");
 
 }
+
+function openFilter(){
+    var element = document.getElementById("filter");
+    element.classList.remove("hidden");
+}
+
+function closeFilter() {
+
+    var element = document.getElementById("filter");
+    element.classList.add("hidden");
+
+}
