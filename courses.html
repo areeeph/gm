@@ -15,7 +15,7 @@
         }
     </style>
 </head>
-<body>
+<body class="bg-gradient-to-r from-indigo-50 to-indigo-100">
 
     <div class="z-10 text-white">
         <div class="bg-primary w-full relative">
@@ -59,36 +59,94 @@
                     <svg xmlns="http://www.w3.org/2000/svg" class="md:hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                       </svg>
-                    <a class="md:flex hidden font-semibold text-secondary" href="#">Login/Signup</a>
+                    <a class="md:flex hidden font-semibold text-secondary" href="login.html">Login/Signup</a>
                 </div>
             </nav>
         </div>
     </div>
     
     
-    <div class="wrapper  space-x-20 flex flex-wrap p-20">
-        <div class="w-1/5">
+    <div class="wrapper  space-x-10 flex flex-wrap p-20">
+
+        <div class="w-1/4 bg-white p-2 rounded py-4">
             <div>
-                <div class="flex justify-between">
-                    <p class="text-primary font-semibold">Filters</p>
+                <div class="flex justify-between mb-4">
+                    <div class="flex items-center space-x-2">
+                        <p class="text-xl text-primary font-semibold">Filter</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+                          </svg>
+                    </div>
                     <p class="text-secondary font-semibold">Reset</p>
                 </div>
+              
                 <form>
-                    <div>
-                        <input id="a" type="checkbox"/>
-                        <label for="a">A</label>
+                    <div class="">
+                        <div class="cursor-pointer filter-list flex space-x-1 items-center">
+                            <span class="filter-list-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-500 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                          <h1 class="text-gray-500 font-semibold text-xl">Institutions</h1>
+                        </div>
+                        <div class="hidden ml-8 py-2">
+                            <div class="relative flex items-center ">
+                                <input id="a" type="checkbox" class="peer appearance-none outline h-4 rounded-sm w-4 border border-primary outline-none "/>
+                                <label for="a" class="absolute top-1 left-0 opacity-0 transition peer-checked:opacity-100 text-gray-500 font-semibold text-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </label>
+                                <label for="a" class="peer px-2 text-gray-600 ">
+                                    MNU
+                                </label>
+                            </div>
+
+                            <div class="relative flex items-center ">
+                                <input id="villa" type="checkbox" class="peer appearance-none outline h-4 rounded-sm w-4 border border-primary outline-none "/>
+                                <label for="villa" class="absolute top-1 left-0 opacity-0 transition peer-checked:opacity-100 text-gray-500 font-semibold text-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </label>
+                                <label for="villa" class="peer px-2 text-gray-600 ">
+                                    Villa College
+                                </label>
+                            </div>
+
+                            <div class="relative flex items-center ">
+                                <input id="a" type="checkbox" class="peer appearance-none outline h-4 rounded-sm w-4 border border-primary outline-none "/>
+                                <label for="a" class="absolute top-1 left-0 opacity-0 transition peer-checked:opacity-100 text-gray-500 font-semibold text-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </label>
+                                <label for="a" class="peer px-2 text-gray-600 ">
+                                    Maps College
+                                </label>
+                            </div>
+
+                            
+                        </div>
                     </div>
-                    <input id="a" type="checkbox"/>
-                    <label for="a">A</label>
 
-                    <div class="p-4 max-w-xs mx-auto bg-white rounded-xl shadow-md">
-                        <label class="flex items-center space-x-3">
-                          <input type="checkbox" name="checked-demo" value="1" class="form-tick appearance-none h-6 w-6 border border-gray-300 rounded-md checked:bg-blue-600 checked:border-transparent focus:outline-none">
-                          <span class="text-gray-900 font-medium">Option 1</span>
-                        </label>
-                      </div>
+                    
+                    <div class="">
+                        <div class="cursor-pointer filter-list flex space-x-1 items-center">
+                            <span class="filter-list-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-500 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                          <h1 class="text-gray-500 font-semibold text-xl">Institutions</h1>
+                        </div>
+                        <div class="ml-8 hidden">
+                            <input id="a" type="checkbox"/>
+                            <label for="a" class="text-gray-500 font-semibold text-lg">A</label>
+                        </div>
+                    </div>
 
-                    <input type="checkbox" class="appearance-none checked:bg-blue-600 checked:border-transparent ...">
                 </form>
             </div>
         </div>
@@ -242,6 +300,35 @@
         </div>
     </div>
 
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+
+    <script type="text/javascript">//<![CDATA[
+  
+  
+        $(".filter-list").click(function () {
+        
+            $header = $(this);
+            //getting the next element
+            $content = $header.next();
+            //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+            $content.slideToggle(500, function () {
+                //execute this after slideToggle is done
+                //change text of header based on visibility of content div
+                
+                if(!$content.is(":visible")){
+                    $header.find('.filter-list-icon').html('<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" /></svg>');
+                    console.log($($header > '.filter-list-icon'));
+                }else{
+                    $header.find('.filter-list-icon').html('<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>');
+                }
+            });
+        
+        });
+        
+        
+          //]]></script>
+        
     <script src="main.js"></script>
 
 </body>
