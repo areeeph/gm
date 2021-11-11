@@ -1,47 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FFFwT</title>
-
-    <link rel="stylesheet" href="build/tailwind.css" />
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+  
+  
+  
+    <style id="compiled-css" type="text/css">
+        .container {
+      width:100%;
+      border:1px solid #d3d3d3;
+  }
+  .container div {
+      width:100%;
+  }
+  .container .header {
+      background-color:#d3d3d3;
+      padding: 2px;
+      cursor: pointer;
+      font-weight: bold;
+  }
+  .content {
+      display: none;
+      padding : 5px;
+  }
+      /* EOS */
+    </style>
+  
+  
+  
   </head>
-  <body class="antialiased p-10">
-    <form class="max-w-sm mx-auto rounded-lg shadow-xl overflow-hidden p-6 space-y-10">
-      <h2 class="text-2xl font-bold text-center">Login</h2>
-      <div class="relative border-b-2 focus-within:border-blue-500">
-        <input type="text" name="username" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
-        <label for="username" class="absolute top-0 -z-1 duration-300 origin-0">Username</label>
+  <body>
+      <div class="">
+      <div class="header"><span>Expand</span>
+  
       </div>
-      <div class="relative border-b-2 focus-within:border-blue-500">
-        <input type="email" name="email" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
-        <label for="email" class="absolute top-0 -z-1 duration-300 origin-0">Email</label>
+      <div class="content">
+          <ul>
+              <li>This is just some random content.</li>
+              <li>This is just some random content.</li>
+              <li>This is just some random content.</li>
+              <li>This is just some random content.</li>
+          </ul>
       </div>
-      <div class="relative border-b-2 focus-within:border-blue-500">
-        <input type="password" name="password" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent" />
-        <label for="password" class="absolute top-0 -z-1 duration-300 origin-0">Password</label>
-      </div>
-    </form>
+  </div>
 
-    <hr class="my-10">
+  <div class="container">
+    <div class="header"><span>Expand</span>
 
-    <form class="max-w-sm mx-auto rounded-lg shadow-xl overflow-hidden p-6 space-y-10">
-      <h2 class="text-2xl font-bold text-center">Login</h2>
-      <div class="outline relative border-2 focus-within:border-blue-500">
-        <input type="text" name="username" placeholder=" " class="block p-4 w-full text-lg appearance-none focus:outline-none bg-transparent" />
-        <label for="username" class="absolute top-0 text-lg bg-white p-4 -z-1 duration-300 origin-0">Username</label>
-      </div>
-      <div class="outline relative border-2 focus-within:border-blue-500">
-        <input type="email" name="email" placeholder=" " class="block p-4 w-full text-lg appearance-none focus:outline-none bg-transparent" />
-        <label for="email" class="absolute top-0 text-lg bg-white p-4 -z-1 duration-300 origin-0">Email</label>
-      </div>
-      <div class="outline relative border-2 focus-within:border-blue-500">
-        <input type="password" name="password" placeholder=" " class="block p-4 w-full text-lg appearance-none focus:outline-none bg-transparent" />
-        <label for="password" class="absolute top-0 text-lg bg-white p-4 -z-1 duration-300 origin-0">Password</label>
-      </div>
-    </form>
-  </body>
-</html>
-© 2021 GitHub, Inc.
-T
+    </div>
+    <div class="content">
+        <ul>
+            <li>This is just some random content.</li>
+            <li>This is just some random content.</li>
+            <li>This is just some random content.</li>
+            <li>This is just some random content.</li>
+        </ul>
+    </div>
+</div>
+
+
+
+      <script type="text/javascript">//<![CDATA[
+  
+  
+  $(".header").click(function () {
+  
+      $header = $(this);
+      //getting the next element
+      $content = $header.next();
+      //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+      $content.slideToggle(500, function () {
+          //execute this after slideToggle is done
+          //change text of header based on visibility of content div
+          $header.text(function () {
+              //change text based on condition
+              return $content.is(":visible") ? "Collapse" : "Expand";
+          });
+      });
+  
+  });
+  
+  
+    //]]></script>
+  
+  
+  </body></html>

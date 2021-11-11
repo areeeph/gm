@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/datatable/css/datatable.css">
+
+    <script src="https://cdn-tailwindcss.vercel.app"></script>
+    <script src="tailwind-config.js"></script>
+
+    
+</head>
+<body class="bg-gradient-to-r from-indigo-50 to-indigo-100">
+    
+    <div class="flex">
+        <div class="w-64 h-screen fixed top-0 left-0 z-20 text-gray-300 bg-primary ">
+            <div class="h-14 bg-red-500"></div>
+            <ul class="py-2 px-3">
+                <li class="">
+                    <a class="flex items-center relative space-x-3 py-2" href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                          </svg>
+                          <div class="font-medium">Dashboard</div>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="flex items-center relative space-x-3 py-2" href="#" >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                          </svg>
+                          <div class=" font-medium">Courses</div>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a class="flex items-center relative space-x-3 py-2" href="#" >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                          </svg>
+                          <div class=" font-medium">Institutions</div>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a class="flex items-center relative space-x-3 py-2" href="#" >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          <div class=" font-medium">Users</div>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a class="flex items-center relative space-x-3 py-2" href="#" >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                          </svg>
+                          <div class=" font-medium">Courses</div>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a class="flex items-center relative space-x-3 py-2" href="#" >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                          </svg>
+                          <div class=" font-medium">Courses</div>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a class="flex items-center relative space-x-3 py-2" href="#" >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                          </svg>
+                          <div class=" font-medium">Courses</div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="flex-auto">
+            <div class="h-14 bg-primary fixed top-0 left-0 w-full">
+                <div class="px-6 text-gray-300 flex items-center h-full justify-between">
+                    <div></div>
+                    <img class="rounded-full bg-secondary p-[1px] h-10 w-10" src="assets/customer-1.jpg" alt="">
+                </div>
+            </div>
+
+
+
+            <div class="p-8 pt-20  pl-72">
+                <div class="flex justify-between">
+                    <h1 class="text-3xl font-medium">Add Course</h1>
+                    <a href="#" class="flex items-center space-x-2 bg-secondary text-white p-2 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                          </svg>
+                        <p>View Courses</p>
+                    </a>
+                </div>
+
+                <div class="bg-white p-4 px-8 pt-8 rounded-md shadow-md mt-8">
+                    <form action="pt-8">
+                        <div class="mb-8 flex">
+                            <div class="w-40">
+                                <label for="title" class="font-semibold ">Title</label>
+                            </div>
+                            <input type="text" class="border border-gray-300 outline-none rounded-sm h-8 w-96">
+                        </div>
+                        <div class="mb-8 flex">
+                            <div class="w-40">
+                                <label for="title" class="font-semibold ">Titlle forg j</label>
+                            </div>
+                            <input type="text" class="border border-gray-300 outline-none rounded-sm h-8 w-96">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+
+</body>
+</html>
